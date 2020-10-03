@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="description" content="este sitio es de prueba" />
+        <meta name="author" content="migue" />
+        <meta name="keywords" content="palabra, palabra1" />
+        <title> Pagina Proyecto Completo JS</title>
+
+        <!-- JQUERY -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+          
+         <!-- para que funcionen otros metodos mas especiales hay que agregar los css de ui jquery -->
+         <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css" />
+         <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css" />
+         <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+        
+          <!-- hay que cargar JQUERYUI -->
+         <!-- SI QUIERO LO BASICO solo agregar el js min -->
+         <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+        <script src="js/FormValidator/form-validator/jquery.form-validator.min.js"></script>
+
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- tema por defecto -->
+        <link id="theme" rel="stylesheet" />
+
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        
+        <!-- BOTONES POR FUERA del GRUPO PRINCIPAL -->
+        <div id="selectheme">
+            <div id="toRed">
+
+            </div>
+            <div id="toGreen">
+
+            </div>
+            <div id="toBlue">
+
+            </div>
+        </div>
+        
+        
+        
+        <div id="global" class="agrupar">
+
+            <header id="cabecera" class="header">  
+                <div id="logo">
+                    <h1>PROYECTO JS INTEGRADOR</h1>
+                </div> 
+            </header>
+        
+            <nav id="navegacion" class="menu">  
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre Mi</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- aca se pone el contenido principal -->
+            <section id="content" class="seccion">
+                <div id="box">
+                    <h2>Contacto</h2>
+
+                    <form id="contact" method="POST" action="">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="" data-validation="alphanumeric">
+                        
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" data-validation="alphanumeric">
+                        
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" data-validation="email">
+                        
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="sexo" data-validation="required">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                        
+                        <label for="fecha">Fecha Nacimiento</label>
+                        <input type="text" name="fecha" id="fecha" data-validation="date" data-validation-format="dd-mm-yyyy">
+                        <!-- la barra es del datepicker -->
+
+                        <label for="edad">Edad</label>
+                        <input type="number" name="edad" id="edad" data-validation="number">
+
+                        <p>
+                            <input type="submit" name="enviar" value="Enviar Formulario" />  
+                        </p>
+                    </form>
+
+                </div>
+            </section>
+
+            <aside id="sidebar" class="columna"> 
+                
+                <div id="about">
+                    <div id="about">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg" /> 
+                    <p id="cuerpoParrafo2"> 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, assumenda. Perferendis ullam iure, provident ipsum delectus, quod eveniet laborum beatae nemo aperiam, porro aliquid nisi molestias nostrum? Distinctio, molestias vero?
+                    </p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form action="#">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="form_name"/>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email"/>
+
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" name="pass"/>
+
+                        <input type="submit" value="Entrar"/>
+                    </form>
+                </div>
+            </aside>   
+            
+            <div class="clearfix">
+                <!-- AQUI PODRIA QUE IR EL FOOTER! -->
+                <!-- SI O SI HAY QUE RESTAURAR! COMO VENIA -->
+            </div>
+           
+        </div>
+
+         <footer id="footer" class="pie">
+            Derechos Reservados 2020 &copy;
+
+            <a href="#" id="scroll" class="subir"> Ir arriba...</a>
+        </footer>
+    </body>
+</html>
+
+
+
+
+

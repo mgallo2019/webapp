@@ -1,0 +1,22 @@
+body{
+    background: url("../img/cielo.jpg");
+    background-attachment: fixed;
+}
+
+.header{
+    background: #1F87C4;
+}
+
+.menu ul li:hover{
+    background: #1F87C4;
+}
+
+
+.buttonMore{
+    background: #1F87C4;
+}
+
+
+.ui-state-active{
+    background: #1F87C4;
+}
